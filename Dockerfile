@@ -12,5 +12,4 @@ WORKDIR /home/quake2/
 RUN make -C src
 RUN mv src/q2proded .
 RUN mv src/gamex86_64.so baseq2/
-RUN ls -al
 CMD ./q2proded +exec server.cfg
